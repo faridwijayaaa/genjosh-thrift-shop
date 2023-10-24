@@ -22,11 +22,11 @@ document.querySelectorAll(".btnDetail").forEach((item) => {
     document.querySelector(".modalHarga").innerHTML = harga;
 
     const nohp = "6288991127247";
-    let sendText = `whatsapp://send? text=${encodeURIComponent(gambar)}`;
-    // let pesan =
-    //   `https://api.whatsapp.com/send?phone=${nohp}&text=Halo, saya ingin membeli produk ini` +
-    //   encodeURIComponent(gambar);
+    // let sendText = `whatsapp://send? text=${encodeURIComponent(gambar)}`;
+    let pesan =
+      `https://api.whatsapp.com/send?phone=${nohp}&text=Halo, saya ingin membeli produk ini` +
+      encodeURIComponent(gambar);
 
-    document.querySelector(".btnBeli").href = sendText;
+    document.querySelector(".btnBeli").href = pesan;
   });
 });
